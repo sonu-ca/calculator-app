@@ -1,5 +1,5 @@
 # calculator-app
-This project implements a simple, extensible calculator service in Java, designed to adhere to object-oriented principles such as the Open-Closed Principle (OCP). The service supports basic arithmetic operations and allows chaining of multiple operations in sequence. It also provides a REST API for accessing the calculator functionality and includes unit tests for various use cases.
+This project is a simple, flexible calculator service built in Java, following key object-oriented principles like the Open-Closed Principle (OCP). It handles basic arithmetic operations and lets you chain multiple calculations together. The service includes a REST API for easy access and comes with unit tests to cover different use cases.
 
 ## Table of Contents
 - [Features](#features)
