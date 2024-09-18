@@ -1,6 +1,4 @@
 # calculator-app
-# Calculator Service
-
 This project implements a simple, extensible calculator service in Java, designed to adhere to object-oriented principles such as the Open-Closed Principle (OCP). The service supports basic arithmetic operations and allows chaining of multiple operations in sequence. It also provides a REST API for accessing the calculator functionality and includes unit tests for various use cases.
 
 ## Table of Contents
@@ -63,7 +61,7 @@ The application will start on `http://localhost:8080`.
    - **Response:**
      ```json
      {
-       "result": 8
+      8.0
      }
      ```
 
@@ -84,18 +82,6 @@ The application will start on `http://localhost:8080`.
    - **Response:**
      ```json
      {
-       "result": 4
+      4.0
      }
      ```
-
-### Request Example
-To perform a calculation using the API, you can send a `POST` request using a tool like `curl` or Postman. For example:
-
-```bash
-curl -X POST http://localhost:8080/calculate \
-  -H 'Content-Type: application/json' \
-  -d '{
-    "operation": "ADD",
-    "num1": 10,
-    "num2": 5
-  }'
