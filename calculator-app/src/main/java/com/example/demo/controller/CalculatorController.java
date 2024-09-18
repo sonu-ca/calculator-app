@@ -32,7 +32,7 @@ public class CalculatorController {
         return new ResponseEntity<Double>(result, new HttpHeaders(), HttpStatus.OK);
     }
     
-    @PostMapping("/calculate/chain")
+    @PostMapping("/chain-calculate")
     public ResponseEntity<Double> calculateChain(@RequestBody ChainedCalculationRequest chainedCalculationRequest) {
     	validateRequest.validate(chainedCalculationRequest);
         double result = calculatorService.chainCalculate(chainedCalculationRequest.getInitialValue(), chainedCalculationRequest.getOperations());

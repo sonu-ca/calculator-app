@@ -18,6 +18,8 @@ public class CalculatorService {
 
 	private final Map<Operation, OperationInterface> operationMap = new HashMap<>();
 
+	// Registering operations in the map for easy extensibility.
+	// New operations can be added without modifying existing code.
 	public CalculatorService() {
 		operationMap.put(Operation.ADD, new AddOperation());
 		operationMap.put(Operation.SUBTRACT, new SubtractOperation());

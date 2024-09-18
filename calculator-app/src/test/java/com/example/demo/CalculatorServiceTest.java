@@ -9,7 +9,7 @@ import com.example.demo.model.Operation;
 import com.example.demo.model.OperationWithNumber;
 import com.example.demo.service.CalculatorService;
 
-public class CalculatorApplicationTest {
+public class CalculatorServiceTest {
 
 	private CalculatorService calculatorService;
 

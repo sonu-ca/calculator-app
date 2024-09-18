@@ -28,14 +28,14 @@ public class ValidateRequest {
 			throw new CalculatorException("Operations list cannot be null or empty");
 		}
 
-		  // Validate each operation in the chain
-        for (int i = 0; i < request.getOperations().length; i++) {
-            OperationWithNumber operationWithNumber = request.getOperations()[i];
-            validateOperation(operationWithNumber.getOperation(), operationWithNumber.getNum2(), i);
-        }
+		// Validate each operation in the chain
+		for (int i = 0; i < request.getOperations().length; i++) {
+			OperationWithNumber operationWithNumber = request.getOperations()[i];
+			validateOperation(operationWithNumber.getOperation(), operationWithNumber.getNum2(), i);
+		}
 	}
 
-	// Private reusable method for validating a single operation
+	// for validating a single operation
 	private void validateOperation(Operation operation, double num2) {
 		if (operation == null) {
 			throw new NullPointerException("Operation cannot be null");
@@ -44,15 +44,16 @@ public class ValidateRequest {
 			throw new ArithmeticException("Cannot divide by zero");
 		}
 	}
-	
-    // Overloaded method for chained operations to provide index-specific error messages
-    private void validateOperation(Operation operation, double num2, int index) {
-        if (operation == null) {
-            throw new NullPointerException("Operation at index " + index + " cannot be null");
-        }
-        if (operation.equals(Operation.DIVIDE) && num2 == 0) {
-            throw new ArithmeticException("Cannot divide by zero at index " + index);
-        }
-    }
+
+	// Overloaded method for chained operations to provide index-specific error
+	// messages
+	private void validateOperation(Operation operation, double num2, int index) {
+		if (operation == null) {
+			throw new NullPointerException("Operation at index " + index + " cannot be null");
+		}
+		if (operation.equals(Operation.DIVIDE) && num2 == 0) {
+			throw new ArithmeticException("Cannot divide by zero at index " + index);
+		}
+	}
 
 }

@@ -3,7 +3,9 @@ package com.example.demo.exceptionhandling;
 
 public class CalculatorException extends RuntimeException {
 
-    public CalculatorException() {
+	private static final long serialVersionUID = -93793273111513511L;
+
+	public CalculatorException() {
         super();
     }
 
