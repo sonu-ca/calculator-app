@@ -62,7 +62,7 @@ The application will start on `http://localhost:8080`.
      ```
 
 2. **Perform a Chained Calculation:**
-   - **Endpoint:** `POST /calculate/chain`
+   - **Endpoint:** `POST /chain-calculate`
    - **Description:** Perform a series of operations sequentially on an initial value.
    - **Request Body:**
      ```json
