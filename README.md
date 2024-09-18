@@ -16,8 +16,8 @@ This project is a simple, flexible calculator service built in Java, following k
 - Integrated error handling for invalid operations and inputs.
 
 ## Requirements
-- Java 11 or higher
-- Spring Boot 2.5+
+- Java 8 or higher
+- Spring Boot
 - Maven for dependency management and build
 
 ## Setup
