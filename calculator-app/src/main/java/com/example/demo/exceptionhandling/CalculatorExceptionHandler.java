@@ -52,8 +52,8 @@ public class CalculatorExceptionHandler {
 	public ResponseEntity<ExceptionResponse> handleInvalidFormatException(final InvalidFormatException ex,
 			final WebRequest request) {
 
-		ExceptionResponse error = new ExceptionResponse(HttpStatus.BAD_REQUEST.value(), new Date(), ex.getMessage(),
-				request.getDescription(false));
+		ExceptionResponse error = new ExceptionResponse(HttpStatus.BAD_REQUEST.value(), new Date(),
+				"Operation not supported", request.getDescription(false));
 
 		return new ResponseEntity<ExceptionResponse>(error, HttpStatus.BAD_REQUEST);
 	}
