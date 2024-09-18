@@ -7,10 +7,6 @@ This project implements a simple, extensible calculator service in Java, designe
 - [Setup](#setup)
 - [Usage](#usage)
   - [REST API Endpoints](#rest-api-endpoints)
-  - [Request Example](#request-example)
-- [Testing](#testing)
-- [Extensibility](#extensibility)
-- [Error Handling](#error-handling)
 
 ## Features
 - Supports basic operations: Addition, Subtraction, Multiplication, and Division.
