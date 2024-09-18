@@ -22,10 +22,6 @@ This project implements a simple, extensible calculator service in Java, designe
 
 ## Setup
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/calculator-service.git
-    cd calculator-service
-    ```
 
 2. Build the project:
     ```bash
